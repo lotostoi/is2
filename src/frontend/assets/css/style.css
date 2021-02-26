@@ -15,16 +15,17 @@ body {
 }
 
 #adde > header {
-  /*  margin-top: -151px; */
   margin-left: auto;
   margin-right: auto;
   z-index: 999;
-  /*  position: fixed; */
   width: 100%;
-  /*max-width: 1600px;*/
   min-height: 151px;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
 }
 
 #adde > header > .header_1 {
@@ -33,6 +34,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   min-height: 100px;
+  width: 100%;
 }
 
 .log_f {
@@ -230,6 +232,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   justify-content: center;
+  width: 100%;
 }
 
 .nav > .h_shop {
