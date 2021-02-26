@@ -8,6 +8,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 const isProduction = process.argv.join('').includes('production')
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const isDevelopment = !isProduction
 
 module.exports = {
@@ -111,7 +112,9 @@ module.exports = {
     new VueLoaderPlugin(),
     new HTMLWebpackPlugin({
       template: 'frontend/index.html',
+      alwaysWriteToDisk: true,
     }),
+    new HtmlWebpackHarddiskPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name][hash].css',
       chunkFilename: 'css/[id][hash].css',
@@ -120,6 +123,10 @@ module.exports = {
   ],
   devServer: {
     overlay: true,
+    historyApiFallback: {
+      disableDotRule: true,
+      rewrites: [{ from: /.*/, to: 'frontend/index.html' }],
+    },
     proxy: {
       '**': {
         target: 'http://localhost:3000/',
