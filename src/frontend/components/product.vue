@@ -3,12 +3,7 @@
     <div class="item_img">
       <img :src="product.productImg" alt="" class="img_blockitem" />
       <div class="layer">
-        <a
-          href=""
-          @click.prevent="addProduct(product)"
-          class="add_to_cart1"
-          >Add to Cart</a
-        >
+        <a href="" @click.prevent="addItem(product)" class="add_to_cart1">Add to Cart</a>
       </div>
     </div>
     <div class="title_blockitem">
@@ -19,15 +14,15 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
-  props: ["product"],
+  props: ['product'],
   methods: {
-    addProduct(product) {
-      this.$emit("add-product", product)
-    }
-  }
-};
+    ...mapActions({
+      addItem: 'cart/incCart',
+    }),
+  },
+}
 </script>
 
-<style>
-</style>
+<style></style>

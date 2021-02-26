@@ -14,7 +14,7 @@
 
 	<body>
 		<div id="adde">
-			<shop-header :cart-items="cartItem" @additem="remove($event)"></shop-header>
+			<shop-header @additem="remove($event)"></shop-header>
 			<router-view></router-view>
 			<shop-footer></shop-footer>
 		</div>

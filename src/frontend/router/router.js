@@ -5,16 +5,13 @@ Vue.use(VueRouter)
 
 import mainPage from '@/frontend/pages/main'
 import cart from '@/frontend/pages/cart'
-import prodpage from '@/frontend/pages/prodpage'
-import checkout from '@/frontend/pages/checkout'
-//import myform from '@/js/form'
+
 
 const routes = [
   {
     name: 'main',
-    path: '/:products',
+    path: '/',
     component: mainPage,
-    props: true,
   },
   {
     name: 'cart',
@@ -22,15 +19,11 @@ const routes = [
     component: cart,
   },
   {
-    name: 'prodpage',
-    path: '/prodpage',
-    component: prodpage,
+    name: 'cart',
+    path: '/cart',
+    component: cart,
   },
-  {
-    name: 'checkout',
-    path: '/checkout',
-    component: checkout,
-  },
+ 
 ]
 
 let router = new VueRouter({

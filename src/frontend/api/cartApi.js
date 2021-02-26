@@ -1,31 +1,20 @@
-import { http } from "./http"
+import { http } from './http'
 
 export const all = async () => {
-    let { data } = await http.get('cartGoods')
-    return data
+  let { data } = await http.get('cart')
+  return data
 }
 
-export const add = async (id) => {
-    let { data: { result } } = await http.post(`add`, { id: id })
-    return result
+export const add = async (item) => {
+  let {
+    data: { result },
+  } = await http.post(`cart/add`, item)
+  return result
 }
 
-export const inc = async (id) => {
-    let { data: { result } } = await http.put(`inc`, { id: id })
-    return result
-}
-
-export const remove = async (id) => {
-    let { data: { result } } = await http.delete(`remove/${id}`)
-    return result
-}
-
-export const dec = async (id) => {
-    let { data: { result } } = await http.put(`dec`, { id: id })
-    return result
-}
-
-export const removeAll = async () => {
-    let { data: { result } } = await http.delete(`delAll`)
-    return result
+export const inc = async (item) => {
+  let {
+    data: { result },
+  } = await http.put(`cart/inc/${item.id}`)
+  return result
 }

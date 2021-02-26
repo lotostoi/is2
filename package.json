@@ -10,6 +10,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.13",
     "axios": "^0.21.1",
+    "connect-history-api-fallback": "^1.6.0",
     "css-loader": "^5.0.1",
     "css-minimizer-webpack-plugin": "^1.2.0",
     "file-loader": "^6.2.0",

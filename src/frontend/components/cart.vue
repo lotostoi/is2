@@ -20,17 +20,22 @@
 </template>
 
 <script>
-import cartItem from "comp/cartItem.vue";
+import cartItem from 'comp/cartItem.vue'
+import { mapGetters } from 'vuex'
 export default {
-  props: ["cart-items", "showCart"],
+  props: ['showCart'],
   components: { cartItem },
   methods: {
     createEvent($event) {
-      this.$emit('additem', $event) 
+      this.$emit('additem', $event)
     },
   },
-};
+  computed: {
+    ...mapGetters({
+      cartItems: ['cart/cartProducts'],
+    }),
+  },
+}
 </script>
 
-<style>
-</style>
+<style></style>
