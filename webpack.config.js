@@ -15,7 +15,7 @@ module.exports = {
   entry: ['@babel/polyfill', '@/frontend/index.js'],
   output: {
     publicPath: '/',
-    filename: 'js/[name].[cpntenthash].js',
+    filename: 'js/[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -25,6 +25,7 @@ module.exports = {
       '~': path.resolve(__dirname, 'src'),
       '@': path.resolve(__dirname, 'src'),
       comp: path.resolve(__dirname, 'src/frontend/components'),
+      api: path.resolve(__dirname, 'src/frontend/api'),
     },
   },
   module: {

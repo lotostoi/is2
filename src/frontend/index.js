@@ -1,6 +1,6 @@
 import '@/frontend/assets/css/style.css'
 
 import Vue from 'vue'
-import app from '@/frontend/components/main6.js'
+import app from '@/frontend/App.js'
 
 new Vue(app)

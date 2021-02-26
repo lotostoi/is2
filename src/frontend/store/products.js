@@ -1,30 +1,30 @@
-import * as Tasks from '@/api/tasks'
-
-const API = 'https://raw.githubusercontent.com/kellolo/static/master/JSON'
+import * as catalogAPI from 'api/catalogApi'
 
 export default {
-    namespaced: true,
+  namespaced: true,
 
-    state: {
-        products: [],
+  state: {
+    products: [],
+  },
+
+  getters: {
+    products: (state) => state.products,
+  },
+
+  mutations: {
+    setProducts(state, products) {
+      state.products = products
     },
+  },
 
-    getters: {
-        products: (state) => state.products,
+  actions: {
+    async getProducts({ commit }) {
+      try {
+        const catalog = await catalogAPI.all()
+        commit('setProducts', catalog)
+      } catch (e) {
+        console.log(e)
+      }
     },
-
-    mutations: {
-        setProducts(state, products) {
-            state.products = products
-        },
-    },
-
-    actions: {
-        async getProduts({ commit }) {
-            const respons = await fetch(API + '/api/products')
-            const products = await respons.json()
-            commit('setProducts')
-        }
-
-    }
+  },
 }

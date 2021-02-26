@@ -1,19 +1,19 @@
-import Vue from 'vue'
-import Vuelidate from 'vuelidate'
 import ShopHeader from 'comp/header'
 import ShopFooter from 'comp/footer'
 import mySearch from 'comp/mySearch'
 import router from '@/frontend/router/router'
+import store from '@/frontend/store'
 
-Vue.use(Vuelidate)
+store.dispatch("catalog/getProducts")
 
 const API = 'https://raw.githubusercontent.com/kellolo/static/master/JSON'
 
 const app = {
   el: '#adde',
   router,
+  store,
   data: {
-    products: [],
+   // products: [],
     filtered: [],
     cartItem: [],
     shopping: [],
@@ -168,11 +168,6 @@ const app = {
         this.shopping.push(el)
       }
 
-      const products = await this.getJson(`/api/products`)
-      for (let el of products) {
-        this.products.push(el)
-        this.filtered.push(el)
-      }
       const productsCart = await this.getJson(`/api/cart`)
       for (let el of productsCart.content) {
         this.cartItem.push(el)
