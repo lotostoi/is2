@@ -23,9 +23,20 @@ export default {
       console.log(prod)
     },
 
+
+    delToCart: (state, prod) => {
+      state.cartProducts.splice(prod,1)
+      console.log(prod)
+    },
+
     incCart: (state, prod) => {
       let index = state.cartProducts.findIndex((good) => good.id === prod.id)
       Vue.set(state.cartProducts[index], 'quantity', ++state.cartProducts[index].quantity)
+    },
+
+    incDelCart: (state, prod) => {
+      let index = state.cartProducts.findIndex((good) => good.id === prod.id)
+      Vue.set(state.cartProducts[index], 'quantity', --state.cartProducts[index].quantity)
     },
   },
 
@@ -51,6 +62,24 @@ export default {
           const prodForCart = { ...product, quantity: 1 }
           await cartAPI.add(prodForCart)
           commit('addToCart', prodForCart)
+        }
+      } catch (e) {
+        console.log(e)
+      }
+    },
+
+    async decCart({ state, commit }, product) {
+      try {
+        let inCart = state.cartProducts.find((prod) => +prod.id === +product.id)
+        console.log(state.cartProducts)
+        if (inCart) {
+          await cartAPI.del(product)
+          console.log(inCart, 1)
+          commit('incDelCart', inCart)
+        } else {
+          const prodForCart = { ...product, quantity: 1 }
+          await cartAPI.decc(prodForCart)
+          commit('delToCart', prodForCart)
         }
       } catch (e) {
         console.log(e)

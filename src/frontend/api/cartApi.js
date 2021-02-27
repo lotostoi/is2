@@ -18,3 +18,17 @@ export const inc = async (item) => {
   } = await http.put(`cart/inc/${item.id}`)
   return result
 }
+
+export const del = async (item) => {
+  let {
+    data: { result },
+  } = await http.put(`cart/dec/${item.id}`)
+  return result
+}
+
+export const decc = async (item) => {
+  let {
+    data: { result },
+  } = await http.delete(`cart/del`, item)
+  return result
+}

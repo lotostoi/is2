@@ -4,7 +4,7 @@
       v-for="item of cartItems"
       :key="item.productId"
       :cart-item="item"
-      @additem="createEvent($event)"
+      @click.prevent="addItem($event)"
     ></cart-item>
     <div class="total_basket">
       <div class="total_txt">
@@ -26,8 +26,8 @@ export default {
   props: ['showCart'],
   components: { cartItem },
   methods: {
-    createEvent($event) {
-      this.$emit('additem', $event)
+    ...mapGetters{
+      additem: 'cart/incCart',
     },
   },
   computed: {
