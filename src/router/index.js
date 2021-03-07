@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router"
 
 import mainPage from "@/views/main"
 import cart from "@/views/cart"
+import checkout from "@/views/checkout"
 
 
 const routes = [
@@ -16,6 +17,11 @@ const routes = [
     name: "cart",
     path: "/cart",
     component: cart
+  },
+  {
+    name: "checkout",
+    path: "/checkout",
+    component: checkout
   }
 ]
 
