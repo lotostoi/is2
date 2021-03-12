@@ -38,4 +38,59 @@ export default {
 </script>
 
 <style>
+.fetured_h2_title {
+  margin: 0 auto;
+}
+
+.fetured_h2_title > .block_fetured {
+  margin-top: 100px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.fetured_h2_title > .subtitle_blockitem {
+  margin-bottom: 62px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #9f9f9f;
+}
+
+.all_product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 79px;
+  margin-bottom: 113px;
+  height: 48px;
+  max-width: 1140px;
+}
+
+.all_product .button_prod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 48px;
+  background-color: #f16d7f;
+  font-size: 16px;
+  line-height: 54px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.block_fetured_items {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 </style>

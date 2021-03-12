@@ -78,5 +78,62 @@ export default {
 </script>
 
 <style scoped>
+.registed {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding: 34px 35px;
+  width: 50%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.registed .text_login {
+  display: flex;
+  flex-direction: column;
+}
+
+.registed .text_login .email_password {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.registed .text_login .zvezda {
+  color: #ff0d0d;
+}
+
+.registed .required_fileds {
+  padding-top: 16px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+.registed .forgot {
+  margin-left: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+#gast_email,
+#gast_password {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+#gast_password[type="text"],
+#gast_email[type="text"] {
+  padding-left: 7px;
+}
 
 </style>

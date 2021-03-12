@@ -51,4 +51,116 @@ name: "baner2"
 
 <style scoped>
 
+.bl_2_cont_2,
+.bl_2_cont_3,
+.bl_2_cont_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  height: 176px;
+  width: 373px;
+  background-position: 36px 48px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.bl_2_cont_2 {
+  background-image: url("~@/assets/img/forma_1_1340.svg");
+}
+
+.bl_2_cont_3 {
+  background-image: url("~@/assets/img/forma_1_1341.svg");
+}
+
+.bl_2_cont_1 {
+  background-image: url("~@/assets/img/forma_1_1322.svg");
+}
+
+.baner2_img {
+  display: flex;
+  max-width: 100%;
+}
+
+.baner2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 113px;
+  max-width: 1140px;
+  min-height: 529px;
+  background-color: #222224;
+}
+
+.baner2 .baner2_bl_1 {
+  position: relative;
+  height: 529px;
+}
+
+.baner2 .baner2_bl_1 .ban2_t {
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.baner2 .baner2_bl_1 .ban2_t .h2_baner2_text {
+  margin-left: 39px;
+  margin-top: 146px;
+  font-size: 53.7px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.baner2 .baner2_bl_1 .ban2_t .h2_baner2_text:nth-last-child(-n + 5) {
+  color: #f16d7f;
+}
+
+.baner2 .baner2_bl_1 .ban2_t .baner2_text {
+  margin-left: 39px;
+  font-size: 53.7px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.baner2 .baner2_bl_2 {
+  display: flex;
+  flex-direction: column;
+  width: 373px;
+  height: 529px;
+  float: left;
+}
+
+.baner2 .baner2_bl_2 .bl_2_cont_1 .bl_2_text,
+.baner2 .baner2_bl_2 .bl_2_cont_2 .bl_2_text,
+.baner2 .baner2_bl_2 .bl_2_cont_3 .bl_2_text {
+  position: absolute;
+  width: 219px;
+  margin-top: 52px;
+  margin-right: 45px;
+  overflow: hidden;
+}
+
+.baner2 .baner2_bl_2 .bl_2_cont_1 .bl_2_text .bl_2_title,
+.baner2 .baner2_bl_2 .bl_2_cont_2 .bl_2_text .bl_2_title,
+.baner2 .baner2_bl_2 .bl_2_cont_3 .bl_2_text .bl_2_title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+}
+
+.baner2 .baner2_bl_2 .bl_2_cont_1 .bl_2_text .bl_2_p,
+.baner2 .baner2_bl_2 .bl_2_cont_2 .bl_2_text .bl_2_p,
+.baner2 .baner2_bl_2 .bl_2_cont_3 .bl_2_text .bl_2_p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+}
+
 </style>

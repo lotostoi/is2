@@ -15,5 +15,50 @@ name: "baner1"
 </script>
 
 <style scoped>
+.baner1 {
+  margin-top: 151px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  display: flex;
+  position: relative;
+  max-width: 1600px;
+  height: 665px;
+  background-image: url("~@/assets/img/image_frame_84.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baner1 .img_baner1 {
+  margin-top: 224px;
+  margin-left: 230px;
+  position: absolute;
+  width: 12px;
+  height: 92px;
+  background-color: #f16d7f;
+}
+
+.baner1 .text_baner1 {
+  position: absolute;
+  margin-top: 208px;
+  margin-left: 254px;
+}
+
+.baner1 .text_baner1 .text_content {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.baner1 .text_baner1 .text_content2 {
+  font-size: 40px;
+}
+
+.baner1 .text_baner1 .text_content2:nth-last-child(-n + 7) {
+  color: #f16d7f;
+}
+
 
 </style>

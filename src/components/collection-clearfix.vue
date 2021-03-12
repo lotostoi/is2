@@ -58,5 +58,97 @@ name: "collection-clearfix"
 </script>
 
 <style scoped>
+.collection {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection .block_2 {
+  margin-right: 20px;
+  margin-top: 98px;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  width: 560px;
+  height: 824px;
+}
+
+.collection .block_2 .img_block2 {
+  margin-bottom: 20px;
+  position: relative;
+  width: 560px;
+  height: 542px;
+}
+
+.collection .block_2 .img_block2 .text_cont {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 27px;
+  position: absolute;
+  height: 82px;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.collection .block_2 .img_block2 .text_cont .t_cont1 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.collection .block_2 .img_block2 .text_cont .t_cont2 {
+  font-size: 30px;
+  color: #f16d7f;
+}
+
+.collection .block_2 .img_block2 .content_img {
+  width: 560px;
+  height: 542px;
+}
+
+.collection .block_2 .img_block2_b {
+  margin-right: 21px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 560px;
+  height: 261px;
+}
+
+.collection .block_2 .img_block2_b .text_cont {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 27px;
+  position: absolute;
+  height: 82px;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.collection .block_2 .img_block2_b .text_cont .t_cont1 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.collection .block_2 .img_block2_b .text_cont .t_cont2 {
+  font-size: 30px;
+  color: #f16d7f;
+}
+
+.collection .block_2 .img_block2_b .content_img_b {
+  width: 560px;
+  height: 261px;
+}
 
 </style>

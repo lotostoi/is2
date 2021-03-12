@@ -104,4 +104,153 @@ export default {
     }
   }
 }
+.shipping_adress {
+  margin: 0 auto;
+  width: 1140px;
+  height: 473px;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.shopping_cart_contin {
+  width: 100%;
+}
+
+.shopping_cart_contin > .shopping_button {
+  width: 100%;
+  padding-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopping_cart_contin > .shopping_button > .button_shopping {
+  width: 235px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.shopping_cart_contin > .adress_coupon_total {
+  width: 100%;
+}
+
+.shopping_cart_contin > .adress_coupon_total .shipping_adress {
+  margin-top: 63px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.shopping_cart_contin > .adress_coupon_total .bangladesh {
+  width: 100%;
+  padding: 16px 18px 16px 18px;
+  color: #b1b1b1;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  border: 1px solid #b1b1b1;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid #eaeaea;
+}
+
+.coupon_enter {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+
+.button_get {
+  width: 100px;
+  height: 35px;
+  margin-bottom: 79px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.get_1 {
+  width: 118px;
+}
+
+.grand {
+  margin-top: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 214px;
+  background-color: #f5f3f3;
+}
+
+.grand > .sub_total {
+  text-align: end;
+  width: 100%;
+  padding: 40px 40px 0 40px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e2e2e2;
+}
+
+.grand > .sub_grand {
+  text-align: end;
+  width: 100%;
+  padding: 0px 40px 22px 40px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.grand > .line_grand {
+  margin-bottom: 17px;
+  display: flex;
+  width: 275px;
+  height: 1px;
+  background-color: #e2e2e2;
+}
+
+.grand > .proceed {
+  width: 273px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f16d7f;
+}
+
+.g_total {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
 </style>

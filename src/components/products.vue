@@ -27,4 +27,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.row_item_card {
+  display: flex;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+</style>

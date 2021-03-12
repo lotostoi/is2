@@ -70,6 +70,118 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+  width: 100%;
+  min-height: 151px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  max-width: 1600px;
+}
+header > .header_1 {
+  padding: 0 20px;
+  align-items: center;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.log_f {
+  float: left;
+  margin-right: 13px;
+}
+
+.logo {
+  width: 51px;
+  height: 51px;
+  margin-right: 13px;
+}
+.name_site {
+  display: flex;
+  width: 95px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  margin-left: 10px;
+}
+
+.symbol_d {
+  color: #f16d7f;
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+.shop_account {
+  margin-left: auto;
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff !important;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  min-height: 50px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav > .h_shop {
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.nav > .h_shop > .h_shop_style {
+  list-style-type: none;
+  float: left;
+}
+
+.nav > .h_shop > .h_shop_style > .h_link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  padding: 15px 22px;
+}
+
+.nav > .h_shop > .h_shop_style > .h_link:hover {
+  color: #949292;
+  border-bottom: 3px solid #f16d7f;
+}
+
+.nav > .h_shop > .h_shop_style > .h_link_activ {
+  color: #949292;
+}
+
 .toCart {
   display: flex;
   margin: 0 auto;

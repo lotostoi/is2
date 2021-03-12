@@ -70,4 +70,53 @@ export default {
   font-size: small;
   color: red;
 }
+.shipping_adress {
+  margin: 0 auto;
+  width: 1140px;
+  height: 473px;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+
+.shipping_adress > .shiping_ {
+  display: block;
+  margin-top: 89px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.shipping_adress > .check_register {
+  width: 100%;
+  height: 562px;
+}
+.paragraph1_6 {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1140px;
+  height: 72px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.paragraph1_6:last-child {
+  margin-bottom: 93px;
+}
+
+.paragraph1_6 > .paragraph {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+
 </style>
