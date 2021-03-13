@@ -2,11 +2,11 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import Vuelidate from "vuelidate";
+//import { VuelidatePlugin } from "@vuelidate/core";
 
 
 createApp(App)
   .use(store)
   .use(router)
-  .use(Vuelidate)
+  //.use(VuelidatePlugin)
   .mount("#app");

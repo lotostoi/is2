@@ -62,11 +62,9 @@
                   GRAND TOTAL <span class="g_total">$900</span>
                 </p>
                 <div class="line_grand"></div>
-                <router-link :to="{ name: 'checkout' }"
-                  ><a href="" class="proceed"
-                    >proceed to checkout</a
-                  ></router-link
-                >
+                <router-link class="proceed" :to="{ name: 'checkout' }">
+                  proceed to checkout
+                </router-link>
               </div>
             </div>
           </div>
@@ -82,7 +80,7 @@ import HeaderSecondery from "@/components/header-secondery";
 import shopCart from "@/components/shop_carts";
 import Baner3 from "@/components/baner3";
 export default {
-  components: {Baner3, shopCart, HeaderSecondery },
+  components: { Baner3, shopCart, HeaderSecondery },
 };
 </script>
 
