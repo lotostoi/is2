@@ -1,13 +1,6 @@
 {
     "content": [
         {
-            "productName": "BANANA PEOPLE T-SHIRT",
-            "productPrice": 53,
-            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem2.jpg",
-            "id": 1,
-            "quantity": 1
-        },
-        {
             "productName": "MANGO PEOPLE T-SHIRT",
             "productPrice": 52,
             "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem1.jpg",

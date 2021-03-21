@@ -5,10 +5,8 @@
       <div class="shipping_adress">
         <h2 class="shiping_">01. Shipping Adress</h2>
         <div class="check_register">
-          <check>
-          </check>
-          <registed>
-          </registed>
+          <check> </check>
+          <registed> </registed>
         </div>
       </div>
       <div class="paragraph1_6">
@@ -36,12 +34,12 @@ import Registed from "@/components/registed";
 import HeaderSecondery from "@/components/header-secondery";
 import { email, required, minLength } from "vuelidate/lib/validators";
 export default {
-
-  data: () => ({
+  components: { HeaderSecondery, Registed, Check },
+/*   data: () => ({
     email: "",
     password: "",
   }),
-  components:{ HeaderSecondery, Registed, Check },
+  
   validations: {
     email: { email, required },
     password: { required, minLength: minLength(12) },
@@ -60,9 +58,8 @@ export default {
       console.log(formData);
       this.$router.push("/");
     },
-  },
+  }, */
 };
-
 </script>
 
 <style scoped>
@@ -117,6 +114,4 @@ export default {
   text-transform: uppercase;
   color: #222222;
 }
-
-
 </style>

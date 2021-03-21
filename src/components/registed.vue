@@ -2,65 +2,20 @@
   <div class="registed">
     <p class="guest">Already registed?</p>
     <p class="sub_guest">Please log in below</p>
-    <form
-        method="post"
-        name="log_in"
-        action=""
-        @submit.prevent="submitHandler"
-    >
+    <form method="post" name="log_in" action="" @submit.prevent="submitForm">
       <div class="text_login">
-        <lable for="gast_email" class="email_password"
-        >EMAIL ADDRESS <span class="zvezda">*</span>
-        </lable>
-        <input
-            type="text"
-            id="gast_email"
-            v-model.trim="email"
-            :class="{
-                    invalid:
-                      ($v.email.$dirty && !$v.email.required) ||
-                      ($v.email.$dirty && !$v.email.email),
-                  }"
-            placeholder=""
-            autofocus
-            pattern="^([A-Za-z0-9\.-]+)(@)([a-z0-9-]+)(\.)([a-z0-9]{2,})$"
-        />
-        <small
-            v-if="$v.email.$dirty && !$v.email.required"
-            class="validate_form_invalid"
-        >Введите email</small
-        >
-        <small
-            v-else-if="$v.email.$dirty && !$v.email.email"
-            class="validate_form_invalid"
-        >Введите корректный email</small
-        >
+        <label for="gast_email" class="email_password"
+          >EMAIL ADDRESS <span class="zvezda">*</span>
+        </label>
+        <input v-model="email" />
+        <div v-if="v$.email.$error">Name field has an error.</div>
 
-        <lable for="gast_password" class="email_password"
-        >PASSWORD <span class="zvezda">*</span></lable
+        <label for="gast_password" class="email_password"
+          >PASSWORD <span class="zvezda">*</span></label
         >
-        <input
-            type="text"
-            id="gast_password"
-            v-model.trim="password"
-            :class="{
-                    invalid:
-                      ($v.password.$dirty && !$v.password.required) ||
-                      ($v.password.$dirty && !$v.password.minLength),
-                  }"
-            placeholder=""
-        />
-        <small
-            v-if="$v.password.$dirty && !$v.password.required"
-            class="validate_form_invalid"
-        >Введите пароль</small
-        >
-        <small
-            v-else-if="$v.password.$dirty && !$v.password.minLength"
-            class="validate_form_invalid"
-        >Пароль не должен быть меньше
-          {{ $v.password.$params.minLength.min }} символов</small
-        >
+        <input v-model="password" />
+        <div v-if="v$.password.$error">Name field has an error.</div>
+
       </div>
       <p class="required_fileds" style="padding-bottom: 22px">
         *Required Fileds
@@ -72,9 +27,45 @@
 </template>
 
 <script>
+import Check from "@/components/check";
+import Registed from "@/components/registed";
+import useVuelidate from "@vuelidate/core";
+import { required, minLength, email } from "@vuelidate/validators";
 export default {
-  name: "registed"
-}
+  components: { Registed, Check },
+  setup() {
+    return {
+      v$: useVuelidate(),
+    };
+  },
+  data() {
+    return {
+      email: "",
+      password: "",
+      requiredNameLength: 8
+    };
+  },
+  validations() {
+    return {
+      email: {
+        email,
+        required,
+      },
+      password: {
+        minLength: minLength(this.requiredNameLength),
+        required
+      },
+    };
+  },
+  methods: {
+    submitForm() {
+      this.v$.$touch();
+      if (this.v$.$error) return;
+      console.log("send to servere..");
+    },
+  },
+
+};
 </script>
 
 <style scoped>
@@ -135,5 +126,4 @@ export default {
 #gast_email[type="text"] {
   padding-left: 7px;
 }
-
 </style>
