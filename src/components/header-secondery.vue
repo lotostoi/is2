@@ -4,7 +4,7 @@
       <p class="text_new_top">New Arrivals</p>
       <ul class="men_menu">
         <li class="men_menu_item"><a href="" class="men_menu_a">Home/</a></li>
-        <li class="men_menu_item"><a href="" class="men_menu_a">Men/</a></li>
+        <li class="men_menu_item"><a href="" class="men_menu_a">People/</a></li>
         <li class="men_menu_item">
           <a href="" class="men_menu_a men_menu_a_activ">New Arrivals</a>
         </li>
@@ -22,7 +22,7 @@ name: "header-secondery"
 <style scoped>
 .new_arrivals_background {
   margin: 0 auto;
-  min-height: 148px;
+  min-height: 100px;
   max-width: 1600px;
   background-color: #f8f3f4;
 }
@@ -30,7 +30,7 @@ name: "header-secondery"
 .new_arrivals_background > .new_arrivals {
   margin: 0 auto;
   box-sizing: border-box;
-  min-height: 148px;
+  min-height: 100px;
   max-width: 1140px;
   display: flex;
   justify-content: space-between;

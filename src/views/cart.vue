@@ -28,13 +28,15 @@
       <shop-cart></shop-cart>
 
       <div class="shopping_cart_contin">
+
         <div class="shopping_button">
           <a href="" class="button_shopping">CLEAR SHOPPING CART</a>
           <a href="" class="button_shopping">cLEAR SHOPPING CART</a>
         </div>
+
         <div class="adress_coupon_total">
-          <div class="row">
-            <div class="col-md-4">
+          <div class="ad_co_to">
+            <div class="ad_co_to_column">
               <p class="shipping_adress">Shipping Adress</p>
               <select name="Bangladesh" id="" class="bangladesh">
                 <option value="Bangladesh">Bangladesh</option>
@@ -47,7 +49,7 @@
               </select>
               <a href="" class="button_get">get a quote</a>
             </div>
-            <div class="col-md-4">
+            <div class="ad_co_to_column">
               <p class="shipping_adress">coupon discount</p>
               <p class="coupon_enter">Enter your coupon code if you have one</p>
               <select name="State" id="" class="bangladesh">
@@ -55,7 +57,8 @@
               </select>
               <a href="" class="button_get get_1">Apply coupon</a>
             </div>
-            <div class="col-md-4">
+            <div class="ad_co_to_column">
+              <p class="shipping_adress"></p>
               <div class="grand">
                 <p class="sub_total">Sub total $900</p>
                 <p class="sub_grand">
@@ -88,7 +91,7 @@ export default {
 
 <style lang = "scss" scoped>
 .new_arrivals_background {
-  margin-top: 160px;
+  margin-top: 100px;
 }
 .menu_shopping {
   margin: 10px 0 20px 0;
@@ -104,15 +107,24 @@ export default {
     }
   }
 }
+.ad_co_to{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  height: auto;
+}
+.ad_co_to_column{
+padding: 10px;
+  width: 380px;
+}
 .shipping_adress {
-  margin: 0 auto;
-  width: 1140px;
-  height: 473px;
-  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 45px;
+  height: 55px;
   box-sizing: border-box;
 }
 .shopping_cart_contin {
   width: 100%;
+  justify-content: space-between;
 }
 
 .shopping_cart_contin > .shopping_button {
@@ -120,6 +132,7 @@ export default {
   padding-top: 44px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .shopping_cart_contin > .shopping_button > .button_shopping {
@@ -151,7 +164,7 @@ export default {
 }
 
 .shopping_cart_contin > .adress_coupon_total .bangladesh {
-  width: 100%;
+  width: 360px;
   padding: 16px 18px 16px 18px;
   color: #b1b1b1;
   font-size: 13px;
@@ -159,7 +172,7 @@ export default {
   font-weight: 300;
   border: 1px solid #b1b1b1;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 32px;
   border: 1px solid #eaeaea;
 }
 
@@ -192,7 +205,7 @@ export default {
 }
 
 .grand {
-  margin-top: 63px;
+  margin-bottom: 63px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -65,35 +65,29 @@
           <li class="footer_list">
             <a href="" class="link_style link_footer">Women</a>
           </li>
-          <li class="footer_list">
-            <a href="" class="link_style link_footer">Child</a>
-          </li>
-          <li class="footer_list">
-            <a href="" class="link_style link_footer">Apparel</a>
-          </li>
-          <li class="footer_list">
-            <a href="" class="link_style link_footer">Brows All </a>
-          </li>
+
         </ul>
       </div>
     </div>
     <div class="copyr">
       <p class="copyr_text">© 2017 Brand All Rights Reserved.</p>
       <div class="soc">
-        <div class="img_soc"><img src="@/assets/img/__425.png" alt="" /></div>
+        <div class="img_soc"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
         <div class="img_soc_activ">
-          <img src="@/assets/img/__425.png" alt="" />
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
-        <div class="img_soc"><img src="#" alt="" /></div>
-        <div class="img_soc"><img src="#" alt="" /></div>
-        <div class="img_soc"><img src="#" alt="" /></div>
+        <div class="img_soc"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+        <div class="img_soc"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+        <div class="img_soc"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style>

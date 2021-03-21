@@ -1,8 +1,5 @@
 <template>
   <div>
-    <a href="#" class="button_browse"
-      >Browse <img src="@/assets/img/52.png" alt="" class="strela"
-    /></a>
     <input type="text" class="search_input_shop" v-model="userSearch" />
     <button
         @click.prevent="$parent.searchProduct(userSearch)"

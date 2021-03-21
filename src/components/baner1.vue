@@ -16,7 +16,7 @@ name: "baner1"
 
 <style scoped>
 .baner1 {
-  margin-top: 151px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0;

@@ -1,39 +1,31 @@
 <template>
   <header>
     <div class="header_1">
-      <div class="logo">
+      <router-link :to="{ name: 'main'}" class="logo">
         <img src="@/assets/img/group_2_18.png" alt="" class="log" />
-      </div>
-      <p class="name_site">BRAN<span class="symbol_d">D</span></p>
+        <p class="name_site">BRAN<span class="symbol_d">D</span></p>
+      </router-link>
+
       <div class="search">
         <my-search
           :userSearch="userSearch"
           @search="searchProduct(userSearch)"
         ></my-search>
       </div>
+      <div class="nav">
+        <ul class="h_shop">
+          <li class="h_shop_style">
+            <router-link :to="{ name: 'main' }" class="h_link">Home</router-link>
+          </li>
+          <li class="h_shop_style"><a href="" class="h_link">People</a></li>
+        </ul>
+      </div>
       <router-link :to="{ name: 'cart' }" class="toCart">
         {{ allQuantity }}
         <img src="@/assets/img/forma_1_1113.svg" alt="" />
       </router-link>
-      <a class="shop_account"
-        >My Account <img src="@/assets/img/__1109.png" alt="" class="bstrela"
-      /></a>
     </div>
-    <div class="nav">
-      <ul class="h_shop">
-        <li class="h_shop_style">
-          <router-link :to="{ name: 'main' }" class="h_link">Home</router-link>
-        </li>
-        <li class="h_shop_style">
-          <a href="" class="h_link">Man</a>
-        </li>
-        <li class="h_shop_style"><a href="" class="h_link">Women</a></li>
-        <li class="h_shop_style"><a href="" class="h_link">Kids</a></li>
-        <li class="h_shop_style"><a href="" class="h_link">Accoseriese</a></li>
-        <li class="h_shop_style"><a href="" class="h_link">Featured</a></li>
-        <li class="h_shop_style"><a href="" class="h_link">Hot Deals</a></li>
-      </ul>
-    </div>
+
   </header>
 </template>
 
@@ -48,6 +40,7 @@ export default {
   data: () => ({
     showCart: false,
     userSearch: "",
+
   }),
   props: ["cart-items", "my-search"],
   methods: {
@@ -64,9 +57,10 @@ export default {
   computed: {
     ...mapGetters({
       allQuantity: ["cart/allQuantity"],
-    }),
-  },
-};
+    })
+  }
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -75,7 +69,7 @@ header {
   margin-right: auto;
   z-index: 999;
   width: 100%;
-  min-height: 151px;
+  min-height: 100px;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
   display: flex;
@@ -83,8 +77,7 @@ header {
   position: fixed;
   top: 0;
   box-sizing: border-box;
-  max-width: 1600px;
-}
+ }
 header > .header_1 {
   padding: 0 20px;
   align-items: center;
@@ -99,14 +92,14 @@ header > .header_1 {
   float: left;
   margin-right: 13px;
 }
-
 .logo {
-  width: 51px;
+  width: auto;
   height: 51px;
   margin-right: 13px;
 }
 .name_site {
   display: flex;
+  float: right;
   width: 95px;
   font-size: 27px;
   line-height: 32px;
@@ -115,6 +108,7 @@ header > .header_1 {
   letter-spacing: 0.025em;
   color: #222222;
   margin-left: 10px;
+  margin-top: 12px;
 }
 
 .symbol_d {
@@ -145,7 +139,7 @@ header > .header_1 {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1140px;
+  max-width: 200px;
   min-height: 50px;
   background-color: #ffffff;
   margin: 0 auto;

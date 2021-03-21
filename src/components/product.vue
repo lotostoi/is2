@@ -8,7 +8,7 @@
     </div>
     <div class="title_blockitem">
       <p class="text_blockitem">{{ product.productName }}</p>
-      <p class="price_blockitem">{{ product.productPrice }}</p>
+      <p class="price_blockitem">{{ product.productPrice }} $</p>
     </div>
   </div>
 </template>
