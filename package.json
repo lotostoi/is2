@@ -9,15 +9,12 @@
     "startServer": "nodemon server/server.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@fortawesome/vue-fontawesome": "^3.0.0-3",
-=======
     "@vuelidate/core": "^2.0.0-alpha.14",
     "@vuelidate/validators": "^2.0.0-alpha.12",
->>>>>>> 72ae8775d0b2d54cc1631d7e9f4ae07b306755af
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "vue": "^3.0.0",
