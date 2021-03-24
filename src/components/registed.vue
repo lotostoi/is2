@@ -70,10 +70,12 @@ export default {
 
 <style scoped>
 .registed {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   float: left;
   padding: 34px 35px;
   width: 50%;
+  min-width: 390px;
   height: auto;
   box-sizing: border-box;
 }
@@ -115,7 +117,7 @@ export default {
   color: #222222;
 }
 .bangladesh {
-  width: 360px;
+  max-width: 360px;;
   padding: 16px 18px 16px 18px;
   color: #b1b1b1;
   font-size: 13px;

@@ -55,10 +55,12 @@ export default {
 }
 .shipping_adress {
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
   height: auto;
   border-bottom: 1px solid #e8e8e8;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .shipping_adress > .shiping_ {

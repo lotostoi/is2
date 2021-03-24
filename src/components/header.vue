@@ -93,6 +93,7 @@ header > .header_1 {
   margin-right: 13px;
 }
 .logo {
+  display: flex;
   width: auto;
   height: 51px;
   margin-right: 13px;
@@ -120,6 +121,7 @@ header > .header_1 {
   display: flex;
   justify-content: flex-start;
   margin: 20px;
+  width: 100%;
 }
 .shop_account {
   margin-left: auto;
@@ -150,6 +152,7 @@ header > .header_1 {
 .nav > .h_shop {
   padding-top: 12px;
   box-sizing: border-box;
+  display: flex;
 }
 
 .nav > .h_shop > .h_shop_style {

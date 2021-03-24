@@ -16,6 +16,14 @@
           Dynamically optimize.
         </p>
       </div>
+      <div class="footer_hieght">
+        <ul>
+          <li><company></company></li>
+          <li> <information></information></li>
+          <li><category></category></li>
+        </ul>
+      </div>
+
       <div class="footer_2">
         <h2 class="footer_h2">COMPANY</h2>
         <ul class="footer_ul">
@@ -36,6 +44,7 @@
           </li>
         </ul>
       </div>
+
       <div class="footer_3">
         <h2 class="footer_h2">INFORMATION</h2>
         <ul class="footer_ul">
@@ -56,7 +65,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer_4">
+           <div class="footer_4">
         <h2 class="footer_h2">SHOP CATEGORY</h2>
         <ul class="footer_ul">
           <li class="footer_list">
@@ -85,8 +94,11 @@
 </template>
 
 <script>
+import Company from "@/components/company-nav";
+import Information from "@/components/information-nav";
+import Category from "@/components/category-nav";
 export default {
-
+components: { Company, Information, Category }
 };
 </script>
 
@@ -95,6 +107,23 @@ footer {
   min-height: 537px;
   max-width: 100%;
   position: relative;
+}
+.footer_hieght{
+  display: none;
+}
+.footer_hieght ul{
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  width: auto;
+}
+.footer_hieght ul li{
+  display: flex;
+  width: auto;
+  margin: 0 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 /* line 796, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
@@ -160,7 +189,11 @@ footer {
 
 /* line 853, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .footer_list {
+  display: block;
   height: 44px;
+}
+.footer_hieght ul li ul{
+  display: block;
 }
 .link_style {
   text-decoration: none;

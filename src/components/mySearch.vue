@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <input type="text" class="search_input_shop" v-model="userSearch" />
-    <button
-        @click.prevent="$parent.searchProduct(userSearch)"
-        class="search_top">
-                          <img src="@/assets/img/59.png" alt="" class="search_img"
-    /></button>
+  <div class="search_inp_but">
+    <div class="inp_search">
+      <input type="text" class="search_input_shop" v-model="userSearch" />
+    </div>
+    <div class="but_search">
+      <button
+          @click.prevent="$parent.searchProduct(userSearch)"
+          class="search_top">
+        <img src="@/assets/img/59.png" alt="" class="search_img"
+        /></button>
+    </div>
 <!--    <a-->
 <!--      href="#"-->
 <!--      @click.prevent="$parent.searchProduct(userSearch)"-->
@@ -60,7 +64,19 @@ padding-left: 10px;
   letter-spacing: 0.025em;
   vertical-align: middle;
 }
-
+.search_inp_but{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+.inp_search{
+  display:flex;
+  float: left;
+}
+.but_search {
+  display:flex;
+  float: left;
+}
 .search_input_shop[value] {
   padding-left: 10px;
   font-size: 14px;

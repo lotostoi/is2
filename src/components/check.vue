@@ -58,10 +58,12 @@ name: "check"
 }
 
 .check {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   float: left;
   padding: 34px 35px;
   width: 50%;
+  min-width: 390px;
   height: auto;
   box-sizing: border-box;
 }
@@ -133,5 +135,4 @@ name: "check"
   font-weight: 400;
   color: #b3b2b2;
 }
-
 </style>
