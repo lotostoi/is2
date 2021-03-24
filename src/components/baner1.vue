@@ -50,6 +50,7 @@ name: "baner1"
   font-weight: 900;
   letter-spacing: 0.025em;
   color: #222222;
+  text-align: left;
 }
 
 .baner1 .text_baner1 .text_content2 {

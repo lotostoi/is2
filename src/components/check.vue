@@ -62,6 +62,7 @@ name: "check"
   float: left;
   padding: 34px 35px;
   width: 50%;
+  height: auto;
   box-sizing: border-box;
 }
 .save_tame {

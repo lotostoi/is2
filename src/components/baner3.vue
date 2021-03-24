@@ -61,14 +61,13 @@ export default {
   max-width: 1140px;
   min-height: 438px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
 }
 
 /* line 638, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .slider_ban3 {
   margin-top: 111px;
-  float: left;
   width: 486px;
 }
 
@@ -114,7 +113,8 @@ export default {
 
 /* line 681, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .ban3_nav {
-  margin-left: 140px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 41px;
   display: inline-block;
   float: left;
@@ -143,8 +143,6 @@ export default {
 
 /* line 707, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .polosa {
-  position: absolute;
-  left: 50%;
   width: 1px;
   height: 438px;
   background-color: #ffffff;
@@ -152,7 +150,6 @@ export default {
 
 /* line 715, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .subscribe {
-  float: right;
   display: block;
   width: 386px;
   margin-bottom: 40px;
@@ -192,7 +189,7 @@ export default {
   border: none;
   position: relative;
   margin-top: 25px;
-  width: 340px;
+  width: 100%;
   height: 46px;
   background-color: #e1e1e1;
   border-radius: 23px;
@@ -213,7 +210,7 @@ export default {
 /* line 766, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .buton_subscribe {
   margin-top: 25px;
-  margin-left: -59px;
+  margin-left: -104px;
   padding-left: 0;
   position: absolute;
   float: right;

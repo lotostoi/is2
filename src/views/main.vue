@@ -87,6 +87,11 @@ export default {
   color: #ffffff;
   text-decoration: none;
 }
+.button_prod:hover {
+  background-color: #ee5469;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .block_fetured_items {
   max-width: 1140px;
   display: flex;

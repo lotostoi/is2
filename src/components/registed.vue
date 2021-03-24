@@ -7,13 +7,13 @@
         <label for="gast_email" class="email_password"
           >EMAIL ADDRESS <span class="zvezda">*</span>
         </label>
-        <input v-model="email" />
+        <input class="bangladesh" v-model="email" />
         <div v-if="v$.email.$error">Name field has an error.</div>
 
         <label for="gast_password" class="email_password"
           >PASSWORD <span class="zvezda">*</span></label
         >
-        <input v-model="password" />
+        <input class="bangladesh" v-model="password" />
         <div v-if="v$.password.$error">Name field has an error.</div>
 
       </div>
@@ -72,14 +72,15 @@ export default {
 .registed {
   display: inline-block;
   float: left;
-  width: 50%;
   padding: 34px 35px;
   width: 50%;
-  height: 250px;
+  height: auto;
   box-sizing: border-box;
 }
 
 .registed .text_login {
+  margin: 0 auto;
+  width: 76%;
   display: flex;
   flex-direction: column;
 }
@@ -112,6 +113,29 @@ export default {
   line-height: 20px;
   font-weight: 400;
   color: #222222;
+}
+.bangladesh {
+  width: 360px;
+  padding: 16px 18px 16px 18px;
+  color: #b1b1b1;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  border: 1px solid #b1b1b1;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  border: 1px solid #eaeaea;
+}
+.continue {
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
 }
 
 #gast_email,

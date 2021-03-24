@@ -80,17 +80,20 @@ name: "collection-clearfix"
   width: 560px;
   height: 542px;
 }
+.img_block2:hover {
+  opacity: 80%;
+}
+.img_block2_b:hover{
+  opacity: 80%;
+}
 
 .collection .block_2 .img_block2 .text_cont {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
   margin-top: 27px;
   position: absolute;
   height: 82px;
   background-color: #ffffff;
-  justify-content: center;
 }
 
 .collection .block_2 .img_block2 .text_cont .t_cont1 {
@@ -100,6 +103,9 @@ name: "collection-clearfix"
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #222222;
+}
+p.t_cont1{
+  margin: 0;
 }
 
 .collection .block_2 .img_block2 .text_cont .t_cont2 {

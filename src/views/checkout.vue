@@ -4,26 +4,12 @@
     <main>
       <div class="shipping_adress">
         <h2 class="shiping_">01. Shipping Adress</h2>
-        <div class="check_register">
+        <div class="check_register clearfix">
           <check> </check>
           <registed> </registed>
         </div>
       </div>
-      <div class="paragraph1_6">
-        <h2 class="paragraph">02. BILLING INFORMATION</h2>
-      </div>
-      <div class="paragraph1_6">
-        <h2 class="paragraph">03. SHIPPING INFORMATION</h2>
-      </div>
-      <div class="paragraph1_6">
-        <h2 class="paragraph">04. SHIPPING METHOD</h2>
-      </div>
-      <div class="paragraph1_6">
-        <h2 class="paragraph">05. PAYMENT METHOD</h2>
-      </div>
-      <div class="paragraph1_6">
-        <h2 class="paragraph">06. ORDER REVIEW</h2>
-      </div>
+
     </main>
   </div>
 </template>
@@ -70,7 +56,7 @@ export default {
 .shipping_adress {
   margin: 0 auto;
   width: 1140px;
-  height: 473px;
+  height: auto;
   border-bottom: 1px solid #e8e8e8;
   box-sizing: border-box;
 }

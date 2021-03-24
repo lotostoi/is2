@@ -168,7 +168,6 @@ padding: 10px;
   font-size: 13px;
   line-height: 1.2;
   font-weight: 300;
-  border: 1px solid #b1b1b1;
   margin-bottom: 20px;
   margin-right: 32px;
   border: 1px solid #eaeaea;

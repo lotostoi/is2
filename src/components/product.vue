@@ -60,13 +60,7 @@ export default {
   background-color: rgba(58, 56, 56, 0);
 }
 
-.layer:hover {
-  background-color: rgba(58, 56, 56, 0.83);
-}
 
-.add_to_cart1 {
-  display: inline-flex;
-}
 
  .add_to_cart1 {
   align-items: center;
@@ -89,7 +83,15 @@ export default {
   z-index: 500;
   text-decoration: none;
 }
-
+.layer:hover {
+  background-color: rgba(58, 56, 56, 0.83);
+}
+.layer:hover .add_to_cart1 { display: inline-flex;}
+.add_to_cart1:hover {
+  color: #fff;
+  opacity: 62%;
+  background-color: #f16d7f;
+}
 .title_blockitem {
   display: block;
   width: 261px;
