@@ -117,7 +117,7 @@ export default {
   color: #222222;
 }
 .bangladesh {
-  max-width: 360px;;
+  max-width: 360px;
   padding: 16px 18px 16px 18px;
   color: #b1b1b1;
   font-size: 13px;

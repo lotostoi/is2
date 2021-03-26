@@ -34,7 +34,7 @@ import { mapGetters } from "vuex";
 import MySearch from "@/components/mySearch";
 
 export default {
-  components: {
+  components:  {
     MySearch,
   },
   data: () => ({

@@ -927,6 +927,9 @@ a {
   font-weight: 400;
   color: #656565;
 }
+.mango_shirt_cart_img{
+  width: 100%;
+}
 
 .select_mango_menu {
   transform: translate(30%, 200%);
@@ -935,11 +938,97 @@ a {
   height: 30px;
   border: 1px solid #eaeaea;
 }
+@media (min-width: 1050px) and (max-width: 1140px){
+    .ad_co_to{
+      flex-wrap: wrap;
+      }
+
+  .ad_co_to_column:nth-last-child(1)>p{
+    display: none;
+  }
+  .ad_co_to_column:nth-last-child(1){
+    margin-bottom: 25px;
+  }
+  .grand {
+    margin: 0!important;
+  }
+    .ad_co_to_column {
+        padding: 0 105px!important;
+        width: 50%!important;
+        margin: 0 auto;
+     }
+}
+@media (min-width: 908px) and (max-width: 1050px){
+  .proceed{
+    font-size: 13px!important;
+    width: auto!important;
+    padding: 0 5px;
+  }
+  .line_grand{
+    width: 200px!important;
+  }
+  .ad_co_to{
+    flex-wrap: wrap;
+  }
+
+  .ad_co_to_column:nth-last-child(1)>p{
+    display: none;
+  }
+  .ad_co_to_column:nth-last-child(1){
+    margin-bottom: 25px;
+  }
+  .grand {
+    margin: 0!important;
+  }
+  .ad_co_to_column {
+    padding: 0 105px!important;
+    width: 50%!important;
+    margin: 0 auto;
+  }
+}
 @media   (min-width: 838px) and (max-width: 908px){
   .search_input_shop{
 width: 280px;}
+  .ad_co_to{
+    flex-wrap: wrap;
+  }
+
+  .ad_co_to_column:nth-last-child(1)>p{
+    display: none;
+  }
+  .ad_co_to_column:nth-last-child(1){
+    margin-bottom: 25px;
+    padding: 0!important;
+  }
+  .grand {
+    margin: 0!important;
+  }
+  .ad_co_to_column {
+    width: 50%!important;
+    margin: 0 auto;
+  }
+  .ad_co_to_column .button_get{
+    margin: 0 auto;
+  }
 }
 @media (min-width: 576px) and (max-width: 838px) {
+
+  .ad_co_to_column:nth-last-child(1)>p{
+    display: none;
+  }
+  .ad_co_to_column .shipping_adress{
+    margin-top: 15px!important;
+  }
+  .ad_co_to_column{
+    display: block!important;
+    width: 100% !important;
+  }
+  .ad_co_to {
+    flex-direction: column!important;
+  }
+  .ad_co_to_column .button_get{
+    margin: 0 auto;
+  }
   header,
   main,
   .new_arrivals_background{}
@@ -1078,6 +1167,17 @@ width: 280px;}
 }
 
 @media (max-width: 576px) {
+  .ad_co_to_column .button_get{
+    margin: 0 auto;
+  }
+  .ad_co_to_column{
+    display: block!important;
+    width: 100% !important;
+  }
+  .ad_co_to {
+    flex-direction: column!important;
+  }
+
   header,
   main,
   .new_arrivals_background,
@@ -1162,7 +1262,6 @@ width: 280px;}
     margin: 20px auto;
   }
   .subscribe {
-    width: 100%;
     float: none;
   }
   .mango_shirt_cart {
@@ -1187,7 +1286,8 @@ width: 280px;}
     width: 100%;
   }
   .img_ban3 {
-    margin: 0 auto;
+    margin: 0 auto!important;
+
     float: none;
   }
   .footer_shop {
@@ -1254,12 +1354,12 @@ width: 280px;}
     transform: translate(-50%, -50%);
   }
   .buton_subscribe {
-    position: relative;
+    margin-left: 40%!important;
+    tranform:transition (-50%,-50%)!important;
+    position: relative!important;
     display: block;
-    margin-left: 0;
-    margin: 0 auto;
-    float: none;
-    border-radius: 23px 23px 23px 23px;
+    float: none!important;
+    border-radius: 23px 23px 23px 23px!important;
   }
   .copyr {
     flex-direction:column;

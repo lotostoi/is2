@@ -2,6 +2,7 @@
   <div>
     <header-secondery></header-secondery>
     <main>
+
       <div class="menu_shopping">
         <ul class="menu_shopping_ul">
           <li class="menu_shopping_li">
@@ -82,6 +83,7 @@
 import HeaderSecondery from "@/components/header-secondery";
 import shopCart from "@/components/shop_carts";
 import Baner3 from "@/components/baner3";
+
 export default {
   components: { Baner3, shopCart, HeaderSecondery },
 };
@@ -107,13 +109,12 @@ export default {
 }
 .ad_co_to{
   display: flex;
-  flex-wrap: wrap;
   max-width: 1140px;
   height: auto;
 }
 .ad_co_to_column{
 padding: 10px;
-  width: 380px;
+  width: 35%;
 }
 .shipping_adress {
   margin-bottom: 45px;
