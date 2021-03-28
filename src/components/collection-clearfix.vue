@@ -61,12 +61,13 @@ name: "collection-clearfix"
 .collection {
   max-width: 1300px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .collection .block_2 {
-  margin-right: 20px;
-  margin-top: 98px;
+  margin: 10px auto;
+
   display: flex;
   float: left;
   flex-direction: column;

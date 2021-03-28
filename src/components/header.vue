@@ -65,10 +65,11 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  margin-left: auto;
-  margin-right: auto;
   z-index: 999;
   width: 100%;
+  margin: 0 auto;
+  min-height: 100px;
+  max-width: 1600px;
   min-height: 100px;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);

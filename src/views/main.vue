@@ -96,6 +96,5 @@ export default {
   max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 </style>

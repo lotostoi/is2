@@ -103,6 +103,7 @@ components: { Company, Information, Category }
 </script>
 
 <style>
+
 footer {
   min-height: 537px;
   max-width: 100%;
@@ -201,6 +202,18 @@ footer {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #898989;
+}
+.img_soc a .fa{
+  color: #898989;
+}
+.img_soc:hover a .fa{
+  color: #fff;
+}
+.img_soc_activ a .fa{
+  color: #898989;
+}
+.img_soc_activ:hover a .fa{
+  color: #fff;
 }
 
 /* line 865, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */

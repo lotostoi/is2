@@ -11,9 +11,12 @@ export default {
   getters: {
     cartProducts: (state) => state.cartProducts,
     allQuantity: (state) => state.cartProducts.reduce((all, prod) => all + prod.quantity, 0),
+      cartTotal: (state) => state.cartProducts.reduce((total,prod) => total + prod.quantity * prod.productPrice, 0),
   },
 
   mutations: {
+
+
     setCartProducts(state, cartProducts) {
       state.cartProducts = cartProducts
     },

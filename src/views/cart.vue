@@ -41,6 +41,8 @@
               <p class="shipping_adress">Shipping Adress</p>
               <select name="Bangladesh" id="" class="bangladesh">
                 <option value="Bangladesh">Bangladesh</option>
+                <option value="Bangladesh">Moscow</option>
+                <option value="Bangladesh">Kazan</option>
               </select>
               <select name="State" id="" class="bangladesh">
                 <option value="State">State</option>
@@ -61,9 +63,9 @@
             <div class="ad_co_to_column">
               <p class="shipping_adress"></p>
               <div class="grand">
-                <p class="sub_total">Sub total $900</p>
+                <p class="sub_total">Sub total {{ cartTotal }}</p>
                 <p class="sub_grand">
-                  GRAND TOTAL <span class="g_total">$900</span>
+                  GRAND TOTAL <span class="g_total">{{ cartTotal }}</span>
                 </p>
                 <div class="line_grand"></div>
                 <router-link class="proceed" :to="{ name: 'checkout' }">
@@ -83,13 +85,28 @@
 import HeaderSecondery from "@/components/header-secondery";
 import shopCart from "@/components/shop_carts";
 import Baner3 from "@/components/baner3";
+import {mapGetters} from "vuex";
 
 export default {
   components: { Baner3, shopCart, HeaderSecondery },
+  computed: {
+    ...mapGetters({
+      cartTotal: ["cart/cartTotal"],
+    }),
+}
 };
 </script>
 
 <style lang = "scss" scoped>
+
+@media (max-width: 576px) {
+  .bangladesh {
+    width: 100%!important;
+  }
+  .bangladesh option{
+    width: 100%!important;
+  }
+}
 .new_arrivals_background {
   margin-top: 100px;
 }

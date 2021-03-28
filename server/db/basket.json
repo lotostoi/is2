@@ -6,6 +6,13 @@
             "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem1.jpg",
             "id": 0,
             "quantity": 1
+        },
+        {
+            "productName": "STRAWBERRY PEOPLE T-SHIRT",
+            "productPrice": 55,
+            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem3.jpg",
+            "id": 2,
+            "quantity": 2
         }
     ]
 }

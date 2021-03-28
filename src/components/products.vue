@@ -32,6 +32,7 @@ export default {
   display: flex;
   margin-top: 25px;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 </style>

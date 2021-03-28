@@ -22,6 +22,7 @@ name: "header-secondery"
 <style scoped>
 .new_arrivals_background {
   margin: 0 auto;
+  margin-top: 100px;
   min-height: 100px;
   max-width: 1600px;
   background-color: #f8f3f4;

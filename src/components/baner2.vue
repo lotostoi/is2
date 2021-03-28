@@ -58,7 +58,7 @@ name: "baner2"
   flex-direction: row;
   justify-content: flex-end;
   position: relative;
-  height: 176px;
+  height: 155px;
   width: 373px;
   background-position: 36px 48px;
   background-repeat: no-repeat;
@@ -84,16 +84,17 @@ name: "baner2"
 
 .baner2 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 113px;
   max-width: 1140px;
-  min-height: 529px;
+  min-height: auto;
   background-color: #222224;
 }
 
 .baner2 .baner2_bl_1 {
   position: relative;
-  height: 529px;
+  width: 65%;
+  height: auto;
 }
 
 .baner2 .baner2_bl_1 .ban2_t {
@@ -129,7 +130,7 @@ name: "baner2"
   display: flex;
   flex-direction: column;
   width: 373px;
-  height: 529px;
+  height: auto;
   float: left;
 }
 
@@ -138,7 +139,7 @@ name: "baner2"
 .baner2 .baner2_bl_2 .bl_2_cont_3 .bl_2_text {
   position: absolute;
   width: 219px;
-  margin-top: 52px;
+  margin-top: 22px;
   margin-right: 45px;
   overflow: hidden;
 }

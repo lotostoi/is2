@@ -27,11 +27,14 @@ name: "baner1"
   background-image: url("~@/assets/img/image_frame_84.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .baner1 .img_baner1 {
+  transform: translateX(-20px);
   margin-top: 224px;
-  margin-left: 230px;
+  margin-left: 25%;
+  margin-right: 25%;
   position: absolute;
   width: 12px;
   height: 92px;
@@ -39,10 +42,11 @@ name: "baner1"
 }
 
 .baner1 .text_baner1 {
+  margin-left: 25%;
+  margin-right: 25%;
   position: absolute;
   margin-top: 208px;
-  margin-left: 254px;
-}
+  }
 
 .baner1 .text_baner1 .text_content {
   font-size: 60px;
