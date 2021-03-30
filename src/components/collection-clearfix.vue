@@ -157,5 +157,13 @@ p.t_cont1{
   width: 560px;
   height: 261px;
 }
-
+@media (max-width: 576px) {
+  .block_2, .img_block2_b, .img_block2, .content_img_b,.content_img {
+    width: 100% !important;
+    height: auto!important;
+  }
+  .block_2{
+    margin: 2% 2%!important;
+  }
+}
 </style>

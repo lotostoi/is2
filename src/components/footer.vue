@@ -27,20 +27,20 @@
       <div class="footer_2">
         <h2 class="footer_h2">COMPANY</h2>
         <ul class="footer_ul">
+<!--          <li class="footer_list">-->
+<!--            <a href="" class="link_style link_footer_1">Home</a>-->
+<!--          </li>-->
           <li class="footer_list">
-            <a href="" class="link_style link_footer_1">Home</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">Shop</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">Shop</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">About</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">About</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">How It Works</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">How It Works</a>
-          </li>
-          <li class="footer_list">
-            <a href="" class="link_style link_footer">Contact </a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">Contact </router-link>
           </li>
         </ul>
       </div>
@@ -49,19 +49,19 @@
         <h2 class="footer_h2">INFORMATION</h2>
         <ul class="footer_ul">
           <li class="footer_list">
-            <a href="" class="link_style link_footer_1">Tearms & Condition</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer_1">Tearms & Condition</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">Privacy Policy</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">Privacy Policy</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">How to Buy</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">How to Buy</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">How to Sell</a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">How to Sell</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">Promotion </a>
+            <router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer">Promotion</router-link>
           </li>
         </ul>
       </div>
@@ -69,10 +69,10 @@
         <h2 class="footer_h2">SHOP CATEGORY</h2>
         <ul class="footer_ul">
           <li class="footer_list">
-            <a href="" class="link_style link_footer_1">Men </a>
+            <router-link :to="{ name: 'main' }" class="link_style link_footer_1">Home</router-link>
           </li>
           <li class="footer_list">
-            <a href="" class="link_style link_footer">Women</a>
+            <router-link :to="{ name: 'people' }" class="link_style link_footer">People</router-link>
           </li>
 
         </ul>

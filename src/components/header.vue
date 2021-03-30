@@ -17,7 +17,8 @@
           <li class="h_shop_style">
             <router-link :to="{ name: 'main' }" class="h_link">Home</router-link>
           </li>
-          <li class="h_shop_style"><a href="" class="h_link">People</a></li>
+          <li class="h_shop_style"><router-link :to="{ name: 'people' }" class="h_link">People</router-link>
+          </li>
         </ul>
       </div>
       <router-link :to="{ name: 'cart' }" class="toCart">
@@ -189,5 +190,9 @@ header > .header_1 {
   &:hover {
     background-color: pink;
   }
+}
+@media (max-width: 838px) {
+  .logo{margin-top:15px!important;}
+
 }
 </style>

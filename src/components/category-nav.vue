@@ -3,7 +3,12 @@
     <p @click="show=!show" class="footer_h2">SHOP CATEGORY</p>
     <transition name="category">
       <ul v-if="show">
-        <li class="footer_list" v-for="item in items">{{ item }}</li>
+        <li class="footer_list">
+          <router-link :to="{ name: 'main' }" class="link_style link_footer_1">Home</router-link>
+        </li>
+        <li class="footer_list">
+          <router-link :to="{ name: 'people' }" class="link_style link_footer">People</router-link>
+        </li>
       </ul>
     </transition>
   </div>
@@ -14,8 +19,8 @@ export default {
 name: "category-nav",
   data: () => ({
     items:[
-      'Men',
-      'Women'
+      'Home',
+      'People'
     ],
     show: false
   })

@@ -5,14 +5,35 @@
             "productPrice": 52,
             "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem1.jpg",
             "id": 0,
-            "quantity": 1
+            "quantity": 2
         },
         {
             "productName": "STRAWBERRY PEOPLE T-SHIRT",
             "productPrice": 55,
             "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem3.jpg",
             "id": 2,
+            "quantity": 3
+        },
+        {
+            "productName": "PINEAPPLE PEOPLE T-SHIRT",
+            "productPrice": 94,
+            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem6.jpg",
+            "id": 5,
             "quantity": 2
+        },
+        {
+            "productName": "BANANA PEOPLE T-SHIRT",
+            "productPrice": 53,
+            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem2.jpg",
+            "id": 1,
+            "quantity": 1
+        },
+        {
+            "productName": "TOMATO PEOPLE T-SHIRT",
+            "productPrice": 45,
+            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem8.jpg",
+            "id": 7,
+            "quantity": 3
         }
     ]
 }

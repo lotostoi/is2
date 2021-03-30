@@ -3,7 +3,7 @@
     <div class="item_img">
       <img :src="product.productImg" alt="" class="img_blockitem" />
       <div class="layer">
-        <a href="" @click.prevent="addItem(product)" class="add_to_cart1">Add to Cart</a>
+        <a href="" @click.prevent="addItem(product)" class="add_to_cart1"> Add to Cart</a>
       </div>
     </div>
     <div class="title_blockitem">
@@ -71,10 +71,9 @@ export default {
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: auto;
-  font-family: Lato;
   font-size: 13px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 300;
   color: #ffffff;
   width: 123px;
   height: 39px;
@@ -91,6 +90,11 @@ export default {
   color: #fff;
   opacity: 62%;
   background-color: #f16d7f;
+}
+.add_to_cart1:active{
+  color: #fff;
+  opacity: 62%;
+  background-color: #fff;
 }
 .title_blockitem {
   display: block;

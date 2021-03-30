@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <header-secondery></header-secondery>
+  <div class="contentpage">
+
     <main>
 
       <div class="menu_shopping">
@@ -82,13 +82,12 @@
 </template>
 
 <script>
-import HeaderSecondery from "@/components/header-secondery";
 import shopCart from "@/components/shop_carts";
 import Baner3 from "@/components/baner3";
 import {mapGetters} from "vuex";
 
 export default {
-  components: { Baner3, shopCart, HeaderSecondery },
+  components: { Baner3, shopCart },
   computed: {
     ...mapGetters({
       cartTotal: ["cart/cartTotal"],

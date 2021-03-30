@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <header-secondery></header-secondery>
+  <div class="contentpage">
+
     <main>
       <div class="shipping_adress">
         <h2 class="shiping_">01. Shipping Adress</h2>
@@ -17,10 +17,9 @@
 <script>
 import Check from "@/components/check";
 import Registed from "@/components/registed";
-import HeaderSecondery from "@/components/header-secondery";
 import { email, required, minLength } from "vuelidate/lib/validators";
 export default {
-  components: { HeaderSecondery, Registed, Check },
+  components: { Registed, Check },
 /*   data: () => ({
     email: "",
     password: "",

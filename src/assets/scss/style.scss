@@ -1020,6 +1020,12 @@ width: 280px;}
   }
 }
 @media (min-width: 576px) and (max-width: 838px) {
+  .contentpage{
+    margin-top:240px;
+  }
+  .link_footer_1 {
+    line-height: 25px;
+  }
   .text_content{
     font-size: 36px!important;
   }
@@ -1191,12 +1197,24 @@ width: 280px;}
 }
 
 @media (max-width: 576px) {
+  .contentpage{
+    margin-top:240px;
+  }
+  header{
+    position: absolute!important;
+  }
+  .baner2{
+    display: none!important;
+  }
   main{
     margin-top: 220px!important;
   }
   .baner1{display: none!important;}
   .subscribe{
     width:100% !important;
+  }
+  .link_footer_1 {
+    line-height: 25px;
   }
   .prise{
     font-size: 10px;

@@ -3,7 +3,7 @@
       <p @click="show=!show" class="footer_h2">COMPANY</p>
   <transition name="company">
     <ul v-if="show">
-      <li class="footer_list" v-for="item in items">{{ item }}</li>
+      <li class="footer_list" v-for="item in items"><router-link :to="{ name: 'pagedevelopment' }" class="link_style link_footer_1">{{ item }}</router-link></li>
     </ul>
   </transition>
 </div>
@@ -14,7 +14,6 @@ export default {
 name: "company-nav",
   data: () => ({
     items:[
-        'Home',
         'Shop',
         'About',
         'How It Works',
