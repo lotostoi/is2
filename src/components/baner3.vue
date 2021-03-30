@@ -174,7 +174,6 @@ export default {
   margin: 0 auto;
   width: 277px;
   font-size: 14px;
-  font-family: Lato;
   line-height: 24px;
   text-transform: none;
 }
