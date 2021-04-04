@@ -1,6 +1,14 @@
 <template>
   <shop-header></shop-header>
   <router-view />
+<!--      <router-view v-slot="{ Component }">-->
+<!--          <transition enter-active-class="page-enter"-->
+<!--                      leave-active-class="page-leave"-->
+<!--                      mode="out-in">-->
+<!--              <component :is="Component" />-->
+<!--          </transition>-->
+<!--      </router-view>-->
+
   <shop-footer></shop-footer>
 </template>
 <script>
@@ -19,6 +27,21 @@ export default {
 };
 </script>
 <style lang="scss">
+.fade-enter-from{
+opasity: 0;
+  transform: translateX(100px);
+}
+.fade-leave-to{
+  opasity: 0;
+  transform: translateX(-100px);
+}
+.fade-enter-active,.fade-leave-active{
+  transition: all 0.3s ease-out;
+}
+p{
+  margin-bottom:0!important;
+
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

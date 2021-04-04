@@ -22,10 +22,10 @@ name: "baner1"
   margin-bottom: 0;
   display: flex;
   position: relative;
-  max-width: 1600px;
-  height: 665px;
+ /* max-width: 1600px;*/
+  height: 785px;
   background-image: url("~@/assets/img/image_frame_84.jpg");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }

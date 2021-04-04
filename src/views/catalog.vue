@@ -1,7 +1,9 @@
 <template>
 <div class="catalog">
   <h2 class="catalog_h2">CATALOG</h2>
+  <div class="block_fetured_items">
     <products></products>
+  </div>
     <banner3></banner3>
 </div>
 </template>
@@ -26,6 +28,12 @@ export default {
 .catalog{
   margin-top: 120px;
   width: 100%;
+}
+.block_fetured_items{
+  margin: 50px auto;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 838px) {
   .catalog{

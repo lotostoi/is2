@@ -7,6 +7,7 @@ import cart from "@/views/cart"
 import checkout from "@/views/checkout"
 import catalog from "@/views/catalog"
 import pageDevel from "@/views/page_development"
+import prodpage from "@/views/prodpage"
 
 
 const routes = [
@@ -34,6 +35,11 @@ const routes = [
     name: "pagedevelopment",
     path: "/page_development",
     component: pageDevel
+  },
+  {
+    name: "prodpage",
+    path: "/prodpage",
+    component: prodpage
   },
 ]
 

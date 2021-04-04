@@ -243,7 +243,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   min-height: 79px;
   align-items: center;
   background-color: #e6e6e6;

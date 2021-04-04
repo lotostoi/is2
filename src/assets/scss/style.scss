@@ -9,7 +9,7 @@ body {
 }
 
 #app {
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   min-width: 320px;
   margin: 0 auto;
 }
@@ -166,6 +166,7 @@ main > section > .header_cloth > .price_cloth > .strit > .strit_red > .circlel {
 main {
   max-width: 1141px;
   margin: 0 auto;
+  margin-top: 120px;
   clear: both;
 }
 
@@ -915,8 +916,16 @@ a {
   height: 30px;
   border: 1px solid #eaeaea;
 }
+@media (min-width: 1140px) and (max-width: 1430px)
+{
+.baner1{
+  background-size: contain!important;
+}
+}
 @media (min-width: 1050px) and (max-width: 1140px){
-
+  .baner1{
+    background-size: auto!important;
+  }
   .ad_co_to{
       flex-wrap: wrap;
       }
@@ -937,6 +946,9 @@ a {
      }
 }
 @media (min-width: 908px) and (max-width: 1050px){
+  .baner1{
+    background-size: auto!important;
+  }
   .baner2{
     flex-wrap: wrap!important;
   }
@@ -980,6 +992,9 @@ a {
   }
 }
 @media   (min-width: 838px) and (max-width: 908px){
+  .baner1{
+    background-size: auto!important;
+  }
   .baner2{
     flex-wrap: wrap!important;
   }
@@ -1020,6 +1035,9 @@ width: 280px;}
   }
 }
 @media (min-width: 576px) and (max-width: 838px) {
+  .baner1{
+    background-size: auto!important;
+  }
   .contentpage{
     margin-top:240px;
   }
@@ -1062,9 +1080,7 @@ width: 280px;}
   .ad_co_to_column .button_get{
     margin: 0 auto;
   }
-  header,
-  main,
-  .new_arrivals_background{}
+
 
 
   .footer_4,

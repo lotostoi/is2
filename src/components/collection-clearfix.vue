@@ -4,7 +4,7 @@
       <div class="img_block2">
         <div class="text_cont">
           <p class="t_cont1">hOT dEAL</p>
-          <p class="t_cont1 t_cont2">FOR MEN</p>
+          <p class="t_cont2">FOR MEN</p>
         </div>
         <img
             src="@/assets/img/rectangle_19_1130.jpg"
@@ -15,7 +15,7 @@
       <div class="img_block2_b">
         <div class="text_cont">
           <p class="t_cont1">LUXIROUS & trendy</p>
-          <p class="t_cont1 t_cont2">ACCESORIES</p>
+          <p class="t_cont2">ACCESORIES</p>
         </div>
         <img
             src="@/assets/img/rectangle_19_copy_3_1144.jpg"
@@ -28,7 +28,7 @@
       <div class="img_block2_b">
         <div class="text_cont">
           <p class="t_cont1">30% offer</p>
-          <p class="t_cont1 t_cont2">women</p>
+          <p class="t_cont2">women</p>
         </div>
         <img
             src="@/assets/img/rectangle_19_copy_1136.jpg"
@@ -39,7 +39,7 @@
       <div class="img_block2">
         <div class="text_cont">
           <p class="t_cont1">new arrivals</p>
-          <p class="t_cont1 t_cont2">FOR kids</p>
+          <p class="t_cont2">FOR kids</p>
         </div>
         <img
             src="@/assets/img/rectangle_19_copy_2_1137.jpg"
@@ -106,10 +106,14 @@ name: "collection-clearfix"
   color: #222222;
 }
 p.t_cont1{
-  margin: 0;
+  margin-top: 10px;
 }
 
 .collection .block_2 .img_block2 .text_cont .t_cont2 {
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
   font-size: 30px;
   color: #f16d7f;
 }
@@ -149,6 +153,10 @@ p.t_cont1{
 }
 
 .collection .block_2 .img_block2_b .text_cont .t_cont2 {
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
   font-size: 30px;
   color: #f16d7f;
 }

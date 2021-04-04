@@ -43,7 +43,9 @@ export default {
 .baner3 {
   position: relative;
   margin: 0 auto;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
+  background-size: cover;
+  background-position: center;
   min-height: 438px;
   background-image: url("~@/assets/img/rectangle_9_2194.jpg");
   background-color: rgba(242, 242, 242, 0.5);
@@ -51,7 +53,7 @@ export default {
 
 /* line 623, /assets/img/assets/img/assets/imgDesktop/newscsslesson4/scss/style.scss */
 .ten {
-  max-width: 1600px;
+ /* max-width: 1600px;*/
   min-height: 438px;
   background-color: rgba(242, 242, 242, 0.5);
 }

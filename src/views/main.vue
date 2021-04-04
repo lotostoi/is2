@@ -12,7 +12,7 @@
         <products></products>
       </div>
       <div class="all_product">
-        <a href="" class="button_prod">Browse All Product</a>
+        <router-link :to="{ name: 'people'}" class="button_prod">Browse All Product</router-link>
       </div>
       <banner2></banner2>
     </main>
@@ -54,7 +54,7 @@ export default {
 }
 
 .fetured_h2_title > .subtitle_blockitem {
-  margin-bottom: 62px;
+  margin-bottom: 62px!important;
   text-align: center;
   font-size: 14px;
   line-height: 0px;
