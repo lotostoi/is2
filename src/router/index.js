@@ -37,8 +37,8 @@ const routes = [
     component: pageDevel
   },
   {
-    name: "prodpage",
-    path: "/prodpage",
+    name: "proditem",
+    path: "/catalog/:id",
     component: prodpage
   },
 ]

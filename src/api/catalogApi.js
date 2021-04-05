@@ -6,3 +6,4 @@ export const all = async () => {
   return data
 
 }
+

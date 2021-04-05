@@ -2,7 +2,7 @@
   <div class="item_card">
     <div class="item_img">
       <img :src="product.productImg" alt="" class="img_blockitem" />
-      <router-link :to="{name:'prodpage'}" class="layer">
+      <router-link :to="{ name:'proditem', params:{ id: product.id }}" class="layer">
         <a href="" @click.prevent="addItem(product)" class="add_to_cart1"> Add to Cart</a>
       </router-link>
     </div>
@@ -16,12 +16,18 @@
 <script>
 import { mapActions } from 'vuex'
 export default {
-  props: ['product'],
+  props: ['product','proditem'],
   methods: {
     ...mapActions({
       addItem: 'cart/incCart',
+
     }),
   },
+  computed: {
+    showProdItem(){
+
+    }
+  }
 }
 </script>
 

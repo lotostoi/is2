@@ -34,6 +34,13 @@
             "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem4.jpg",
             "id": 3,
             "quantity": 1
+        },
+        {
+            "productName": "CUCUMBER PEOPLE T-SHIRT",
+            "productPrice": 23,
+            "productImg": "https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop/featuredItem7.jpg",
+            "id": 6,
+            "quantity": 1
         }
     ]
 }

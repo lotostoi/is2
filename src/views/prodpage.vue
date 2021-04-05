@@ -1,16 +1,9 @@
 <template>
-  <div :items="product">
-
-    <img :src="slotProps.productImg" alt="" class="img_blockitem" />
-      <div class="layer">
-          <a href="" @click.prevent="addItem(product)" class="add_to_cart1"> Add to Cart</a>
-      </div>
-
-  </div>
+  <div>{{ prod }}</div>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters,mapActions } from 'vuex'
 export default {
   props: ['product'],
   methods: {
@@ -18,8 +11,20 @@ export default {
       addItem: 'cart/incCart',
     }),
   },
+  computed: {
+    ...mapGetters({
+       getItem: 'catalog/getItem',
+    }),
+    prodItemId() {
+      console.log(this.$route.params)
+      return +this.$route.params.id;
+    },
+    prod() {
+      return this.getItem(this.prodItemId);
+    }
+  }
 };
 </script>
 
-<style scoped>
+<style >
 </style>
