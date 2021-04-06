@@ -24,9 +24,9 @@ export default {
     }),
   },
   computed: {
-    showProdItem(){
 
-    }
+
+
   }
 }
 </script>
