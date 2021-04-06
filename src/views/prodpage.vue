@@ -12,9 +12,9 @@ export default {
     }),
   },
   computed: {
-    ...mapGetters({
-       getItem: 'catalog/getItem',
-    }),
+     ...mapGetters({
+      getItem: ['catalog/getItem']
+    }), 
     prodItemId() {
       console.log(this.$route.params)
       return +this.$route.params.id;

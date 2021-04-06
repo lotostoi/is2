@@ -10,14 +10,14 @@ export default {
 
   getters: {
     products: (state) => state.products,
-    getItem: (state, prod) => state.products.find((good) => good.id === prod.id)
+    getItem: (state) => (id) => state.products.find((good) => good.id ===id),
   },
 
   mutations: {
     setProducts(state, products) {
       state.products = products
     },
-
+  
   },
 
   actions: {
